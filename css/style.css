@@ -1,51 +1,223 @@
-body{
-
-    background-image: url(/imagen/fondo2.jpg);
+body {
     color: aliceblue;
+    background-image: url(../imagen/fondo2.jpg);
+    background-attachment: fixed;
 }
 
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    height: 100vh;
-    border: 2px beige;
+    height: 310vh;
     text-align: center;
-    
+    margin: 0 2rem;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.1fr 1fr 1.8fr 1.5fr 2fr 100px;
+    grid-template-areas: "header header header header" "nav . . gallery" "main main main gallery" "main main main gallery" "article1 article1 article1 article1" ". article3 article3 ." "article4 . . ." "footer footer footer footer";
+    column-gap: .5em;
+    row-gap: .5em;
 }
 
-.cabezera{
-    background-color: lightblue;
+a:hover {
+    background-color: yellow;
+    color: blue;
+  }
+
+.cabezera {
+    grid-area: header;
+    font-size: 40px;
+    font-family: 'Comfortaa', sans-serif;
+
+}
+.cabezera h1{
+    font-size: 100px
+
+}
+.sectores {
+    grid-area: nav;
+    border: 1px inset rgb(192, 192, 192, 0.5);
+    font-family: 'Give You Glory', cursive;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(5, 7, 10, 0.300)
 }
 
-.sectores{
-    background-color: lightcoral;
+.lista {
+    margin-left: 4rem;
 }
 
-.historia{
-    background-color: lightgreen;
+.historia {
+    grid-area: main;
+    border: 1px inset rgb(192, 192, 192, 0.5);
+    line-height: 22px;
+    background-color: rgb(5, 7, 12, 0.180);
 }
 
-.videos{
-    background-color: lightslategray;
+
+.tituloss {
+    font-family: 'Noto Serif', serif;
 }
 
-.top{
-    background-color: black;
+.pripa {
+    margin-right: 10rem;
 }
 
-.tabla{
-    background-color: brown;
+.videos {
+    border: 1px inset rgb(192, 192, 192, 0.5);
+    grid-area: gallery;
+    background-color: rgb(5, 12, 7, 0.110);
 }
 
-.formu{
-    background-color: orange;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-.final{
-    background-color: chartreuse;
+div div {
+    height: 100px;
+    margin: 1px 1px 3rem 0.5px;
 }
+
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.caja {
+    width: 250px;
+}
+
+.top {
+    grid-area: article1;
+    background-color: rgb(5, 7, 10, 0.300);
+    border: 1px inset rgb(192, 192, 192, 0.5);
+}
+
+.tabla {
+    background-color: rgb(5, 12, 7, 0.200);
+    border: 1px inset rgb(192, 192, 192, 0.5);
+    grid-area: article3;
+}
+
+caption {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2px;
+}
+
+table {
+    width: 40rem;
+    height: 17rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.formu {
+    grid-area: article4;
+    background: linear-gradient(rgba(76, 78, 84, 0.60), rgba(35, 41, 56, 0.60)), url("../Imagen/formu8.jpg");
+    background-size: cover;
+}
+
+#formu1 {
+    height: 1fr;
+}
+
+.formulario {
+    width: 25rem;
+    font-size: 1rem;
+    line-height: 2.1rem;
+    text-align: center;
+}
+
+.final {
+
+    grid-area: footer;
+    border-top: 1px solid white;
+    padding: 0;
+    height: 20vh;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo1 {
+    width: 95px;
+}
+
+.logotipo {
+    font-size: 1.5rem;
+}
+
+.redes {
+    margin-top: 40px;
+}
+
+span {
+    font-size: 26px;
+}
+
+.fb a {
+    background-color: rgb(62, 62, 189);
+    padding: 8px;
+    border-radius: 30px;
+    color: white;
+}
+
+.tw a {
+    background-color: rgb(7, 7, 9);
+    padding: 8px;
+    border-radius: 30px;
+    color: white;
+}
+
+.tg a {
+    background-color: rgb(238, 8, 157);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.li a {
+    background-color: rgb(12, 12, 221);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.yt a {
+    background-color: rgb(245, 13, 13);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.derechos {
+    display: flex;
+    align-content: space-between;
+    padding: 20px;
+}
+
+.terminos {
+    margin-left: 48rem
+}
+
+.copy {
+    margin-top: 0;
+}
+
+

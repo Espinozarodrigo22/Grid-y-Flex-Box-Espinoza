@@ -1,0 +1,22 @@
+body {
+    background-image: url("/Imagen/fondo2.jpg");
+    
+    }
+    
+    
+    div {
+        font-family: 'Sedgwick Ave', cursive;
+        color: blue;
+        padding: 200px 0px 0 20rem;
+    
+    }
+
+    a:hover{
+
+        background-color: yellow;
+        color: blue;
+    }
+    
+    a{
+        color: white;
+    }
